@@ -18,7 +18,7 @@ All models are tested using standard datasets from `sklearn.datasets` and `CSV` 
 
 - **Iris Dataset**
 - **Diabetes Dataset**
-- **Boston Housing Dataset**
+- **California Housing Dataset**
 - **Custom CSVs in `datasets/` folder**
 
 You can easily load them using:
