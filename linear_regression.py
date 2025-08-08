@@ -21,14 +21,16 @@ scalar=StandardScaler()
 X_train=scalar.fit_transform(X_train)
 X_test=scalar.transform(X_test)
 
-#Applying Linear Regression
+#Importing Linear Regression
 from sklearn.linear_model import LinearRegression
+
 #Cross Validation
 from sklearn.model_selection import cross_val_score
 regression=LinearRegression()
 regression.fit(X_train,y_train)
 mse=cross_val_score(regression,X_train,y_train,scoring='neg_mean_squared_error',cv=10)
 np.mean(mse)
+
 #Prediction
 reg_pred=regression.predict(X_test)
 
