@@ -44,6 +44,3 @@ from sklearn.metrics import accuracy_score, classification_report
 score = accuracy_score(y_test, y_pred)
 print("Accuracy on Test Set:", score)
 
-# Generating and printing classification report
-report = classification_report(y_test, y_pred)
-print("Classification Report:\n", report)
