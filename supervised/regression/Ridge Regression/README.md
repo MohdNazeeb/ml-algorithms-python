@@ -29,15 +29,11 @@ J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)})^2 + \lambd
 $$
 
 Where:
-- \(m\) = number of training examples  
-
-- \(h_\theta(x^{(i)})\) = predicted value
-
-- \(y^{(i)}\) = actual value
-
-- \(\lambda\) = regularization parameter (controls penalty strength)
-  
-- \(\theta_j\) = model parameters (excluding \(\theta_0\))  
+- $m$ = number of training examples  
+- $h_\theta(x^{(i)})$ = predicted value  
+- $y^{(i)}$ = actual value  
+- $\lambda$ = regularization parameter (controls penalty strength)  
+- $\theta_j$ = model parameters (excluding $\theta_0$)   
 
 ⚠️ Note: Larger \(\lambda\) → stronger regularization → smaller coefficients.
 
