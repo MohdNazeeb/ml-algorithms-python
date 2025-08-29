@@ -48,9 +48,9 @@ $$
 $$
 
 Where:
-- \(\alpha\) = learning rate  
-- The term \(\lambda \theta_j\) applies the shrinkage  
 
+- $\alpha$ = learning rate  
+- The term $\lambda \theta_j$ applies the shrinkage.
 ---
 
 ##  Visualization
