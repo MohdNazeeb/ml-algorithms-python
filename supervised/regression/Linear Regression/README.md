@@ -68,8 +68,8 @@ The line tries to minimize the distance between predictions and actual points.
 
 ---
 
-## 📊 Accuracy
+##  Accuracy
 
 The following graph shows the accuracy of the implemented Linear Regression model:
 
-![Accuracy Graph](accuracy.png)
+<img src="accuracy.png" alt="Accuracy Graph" width="500"/>
