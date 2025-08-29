@@ -10,11 +10,13 @@ It establishes a **linear relationship** between the dependent variable (target 
 The main idea is to **fit a straight line** through the data points that best represents the relationship between input `X` and output `Y`.
 
 For **Simple Linear Regression** (one feature):
+
 $$
 h_\theta(x) = \theta_0 + \theta_1 x
 $$
 
 For **Multiple Linear Regression** (multiple features):
+
 $$
 h_\theta(x) = \theta_0 + \theta_1x_1 + \theta_2x_2 + ... + \theta_nx_n
 $$
