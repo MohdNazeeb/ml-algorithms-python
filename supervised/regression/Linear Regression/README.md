@@ -47,6 +47,7 @@ $$
 $$
 
 For Linear Regression:
+
 $$
 \theta_0 := \theta_0 - \alpha \frac{1}{m} \sum_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)})
 $$
