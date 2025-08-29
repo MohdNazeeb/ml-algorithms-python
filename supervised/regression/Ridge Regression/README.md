@@ -30,9 +30,13 @@ $$
 
 Where:
 - \(m\) = number of training examples  
-- \(h_\theta(x^{(i)})\) = predicted value  
-- \(y^{(i)}\) = actual value  
-- \(\lambda\) = regularization parameter (controls penalty strength)  
+
+- \(h_\theta(x^{(i)})\) = predicted value
+
+- \(y^{(i)}\) = actual value
+
+- \(\lambda\) = regularization parameter (controls penalty strength)
+  
 - \(\theta_j\) = model parameters (excluding \(\theta_0\))  
 
 ⚠️ Note: Larger \(\lambda\) → stronger regularization → smaller coefficients.
