@@ -59,15 +59,7 @@ Where:
 
 ##  Visualization
 
-![Elastic Net Regression](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Regularization_penalties.png/640px-Regularization_penalties.png)
-
+<img src="./Elastic_net_diagram.png" alt="Elastic Net Visualization" width="500"/>
 - Elastic Net combines the strengths of both Ridge and Lasso.  
 - It is especially useful when there are **many correlated features**.  
 
----
-
-##  Accuracy
-
-The following graph shows the accuracy of the implemented Elastic Net Regression model:
-
-<img src="accuracyElasticNet.png" alt="Accuracy Graph" width="500"/>
