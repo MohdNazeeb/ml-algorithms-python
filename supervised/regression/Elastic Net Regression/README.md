@@ -59,7 +59,9 @@ Where:
 
 ##  Visualization
 
-<img src="./Elastic_net_diagram.png" alt="Elastic Net Visualization" width="500"/>
+<img src="./Elastic_net_diagram.jpg" alt="Elastic Net Visualization" width="500"/>
 - Elastic Net combines the strengths of both Ridge and Lasso.  
-- It is especially useful when there are **many correlated features**.  
+- It is especially useful when there are  **many correlated features** .
+
+---
 
