@@ -70,16 +70,10 @@ Like SVM, SVR can use different **kernels** to handle non-linear data:
 
 ## 📈 Visualization
 
-![SVR Example](https://upload.wikimedia.org/wikipedia/commons/7/72/SVM_margin.png)
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/72/SVM_margin.png" alt="SVR Example" width="500"/>
 
 - The blue line = regression function  
 - Dashed lines = ε margin boundaries  
-- Support vectors (critical points) determine the line  
-
+- Support vectors (critical points) determine the line
+-  
 ---
-
-## 📊 Accuracy
-
-The following graph shows the accuracy (measured via R² score) of the implemented SVR model:
-
-<img src="accuracySVR.png" alt="SVR Accuracy Graph" width="500"/>
