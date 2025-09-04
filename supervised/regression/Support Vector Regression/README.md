@@ -70,10 +70,11 @@ Like SVM, SVR can use different **kernels** to handle non-linear data:
 
 ## 📈 Visualization
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/72/SVM_margin.png" alt="SVR Example" width="500"/>
+<img src="svm_regression_image.png" alt="SVR Example" width="500"/>
 
-- The blue line = regression function  
-- Dashed lines = ε margin boundaries  
-- Support vectors (critical points) determine the line
--  
----
+- The **green dashed line** = regression function  
+- The **green boundary lines** = ε (epsilon) margin  
+- **Blue triangles** = support vectors (points within the margin)  
+- **Red triangles** = points outside the ε margin (violating slack variables)  
+- The term **slack** represents the error allowed for points outside the margin  
+- SVR tries to fit the function within the ε margin while keeping the model as flat as possible
