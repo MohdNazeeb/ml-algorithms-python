@@ -18,26 +18,34 @@ X_train,X_test,y_train,y_test=train_test_split(x,y,test_size=0.30,random_state=4
 
 #Decision Tree Regression
 from sklearn.tree import DecisionTreeRegressor
-from sklearn.model_selection import GridSearchCV
-regressor=DecisionTreeRegressor()
-parameters={
-    'criterion' : ['squared_error', 'friedman_mse', 'absolute_error', 'poisson'],
-    'splitter' : ['best','random'],
-    'max_depth' : [1,2,3,4,5,6,7,8,9,10],
-    'min_samples_split': [2, 5, 10, 20],
-    'min_samples_leaf': [1, 2, 5, 10]
-}
-decision_tree_cv=GridSearchCV(regressor,param_grid=parameters,scoring='neg_mean_squared_error',cv=5)
-decision_tree_cv.fit(X_train,y_train)
-print(decision_tree_cv.best_params_)
-print(decision_tree_cv.best_score_)
+regressor=DecisionTreeRegressor(max_depth=5,random_state=42)
+regressor.fit(X_train,y_train)
+#Visualizing The Tree
+from  sklearn.tree import plot_tree
+from matplotlib import pyplot as plt
+plt.figure(figsize=(15, 10))
+plot_tree(
+    regressor,
+    feature_names=x.columns,
+    filled=True,
+    rounded=True,
+    fontsize=10
+)
 
 #Prediction and Evavluation
-y_pred=decision_tree_cv.predict(X_test)
+y_pred=regressor.predict(X_test)
 from sklearn.metrics import mean_squared_error,mean_absolute_error,r2_score
 print(mean_squared_error(y_test,y_pred))
 print(mean_absolute_error(y_test,y_pred))
 print(r2_score(y_test,y_pred))
+
+#Accuracy
+import seaborn as sns
+sns.displot(y_pred-y_test,kind='kde')
+plt.plot()
+print("Train R² Score:", r2_score(y_train, regressor.predict(X_train)))
+print("Test R² Score:", r2_score(y_test, y_pred))
+
 
 
 

@@ -58,7 +58,7 @@ The split is chosen to minimize the weighted average of the child node impuritie
 
 ---
 
-## 📈 Visualization
+## 📈 Visualization and Terminologies
 
 <img src="decision_tree_regression_image.png" alt="Decision Tree Terminologies" width="500"/>
 
