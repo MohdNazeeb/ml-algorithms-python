@@ -69,19 +69,25 @@ The split is chosen to minimize the weighted average of the child node impuritie
 
 ---
 
-## ✅ Advantages
+## 🌲 Implementation’s Decision Tree
 
-- Captures **non-linear** relationships  
-- Easy to **interpret and visualize**  
-- Requires little to no **feature scaling or preprocessing**
+Below is the visualization of the trained Decision Tree (with `max_depth=5`) on the California Housing dataset:
 
----
-
-## ❌ Limitations
-
-- High risk of **overfitting** if not pruned  
-- Small changes in data can drastically change the tree (high variance)  
-- Often outperformed by **ensemble methods** (Random Forest, Gradient Boosted Trees)
+<img src="decision_tree_regression_trained.png" alt="Trained Decision Tree" width="800"/>
 
 ---
 
+## 📊 Accuracy
+
+The model was trained and evaluated using **70% training** and **30% testing** data.  
+
+- **Mean Squared Error (MSE):** `0.5210`  
+- **Mean Absolute Error (MAE):** `0.5276`  
+- **R² Score (Test):** `0.6030`  
+- **Train R² Score:** `0.6321`
+
+<img src="output.png" alt="Accuracy" width="800"/>
+
+These results show that the model captures around **60% of the variance** in the housing prices, with a small gap between training and testing performance, indicating **good generalization**.
+
+---
