@@ -73,7 +73,7 @@ The split is chosen to minimize the weighted average of the child node impuritie
 
 Below is the visualization of the trained Decision Tree (with `max_depth=5`) on the California Housing dataset:
 
-<img src="output.png" alt="Trained Decision Tree" width="800"/>
+<img src="output.png" alt="Trained Decision Tree" width="600"/>
 
 ---
 
@@ -86,7 +86,7 @@ The model was trained and evaluated using **70% training** and **30% testing** d
 - **R² Score (Test):** `0.6030`  
 - **Train R² Score:** `0.6321`
 
-<img src="accuracyScore.png" alt="Accuracy" width="800"/>
+<img src="accuracyScore.png" alt="Accuracy" width="500"/>
 
 These results show that the model captures around **60% of the variance** in the housing prices, with a small gap between training and testing performance, indicating **good generalization**.
 
