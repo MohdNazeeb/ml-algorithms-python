@@ -65,22 +65,20 @@ The ensemble reduces variance compared to a single decision tree.
 
 ## 🌲 Implementation’s Random Forest
 
-Below is the visualization of how Random Forest aggregates multiple Decision Trees:
+Below is the visualization of a single Decision Tree of the Random Forest:
 
 <img src="output.png" alt="Random Forest Trained Trees" width="800"/>
 
 ---
 
-## 📊 Model Evaluation (Accuracy & Metrics)
+## 📊 Feature Importance Graph
 
-The model was trained and evaluated using **70% training** and **30% testing** data on the California Housing dataset.  
+Random Forest also provides **feature importance scores**, showing which features have the most influence on predictions.  
 
-- **Mean Squared Error (MSE):** `...`  
-- **Mean Absolute Error (MAE):** `...`  
-- **R² Score (Test):** `...`  
-- **Train R² Score:** `...`  
+<img src="feature_importance.png" alt="Feature Importance Graph" width="600"/>
 
-*(Replace with your actual results after running the implementation.)*  
+- The higher the bar, the more important the feature is in making predictions.  
+- Helps in **interpretability** and **feature selection** for future models.  
 
 ---
 
