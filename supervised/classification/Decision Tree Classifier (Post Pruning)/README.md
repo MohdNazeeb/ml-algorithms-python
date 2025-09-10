@@ -26,13 +26,12 @@ To counter this, **Post-Pruning** is applied:
 
 For a sample $x$, the prediction is:
 
-$$
-h(x) = \text{majority\_class}(R_t)
-$$
+`h(x) = majority_class(R_t)`
 
 Where:
-- $R_t$ = region (leaf node) containing $x$  
-- $\text{majority\_class}(R_t)$ = the most frequent class label in that region  
+- `R_t` = region (leaf node) containing x
+  
+- `majority_class(R_t)` = the most frequent class label in that region
 
 ---
 
@@ -41,12 +40,14 @@ Where:
 The objective is to minimize **impurity** at each split.  
 For classification, impurity is measured using:  
 
-1. **Gini Index**:  
+1. **Gini Index**:
+
 $$
 Gini(t) = 1 - \sum_{k=1}^{K} p_{k}^2
 $$  
 
-2. **Entropy**:  
+3. **Entropy**:  
+
 $$
 Entropy(t) = - \sum_{k=1}^{K} p_{k} \log_2(p_{k})
 $$  
@@ -68,9 +69,11 @@ Where:
 2. **Cost-Complexity Pruning (CCP)**  
    - Introduces a penalty for complexity (depth, number of nodes).  
    - Objective:  
+   
    $$
    R_\alpha(T) = R(T) + \alpha |T|
    $$
+   
    Where:  
    - $R(T)$ = misclassification error of the tree  
    - $|T|$ = number of leaf nodes  
