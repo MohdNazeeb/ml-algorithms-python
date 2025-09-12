@@ -68,11 +68,10 @@ Where:
 
 2. **Cost-Complexity Pruning (CCP)**  
    - Introduces a penalty for complexity (depth, number of nodes).  
-   - Objective:  
-   
-   $$
-   R_\alpha(T) = R(T) + \alpha |T|
-   $$
+   - Objective:
+     
+  $R_\alpha(T) = R(T) + \alpha |T|$
+
    
    Where:  
    - $R(T)$ = misclassification error of the tree  
