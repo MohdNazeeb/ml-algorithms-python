@@ -122,9 +122,6 @@ After pruning, the tree becomes simpler, slightly reducing train accuracy but **
 - **Precision:** `0.93`  
 - **Recall:** `0.94`  
 - **F1 Score:** `0.94`  
-
-<img src="accuracyScore.png" alt="Accuracy" width="500"/>
-
 ---
 
 ## ✅ Key Takeaways
