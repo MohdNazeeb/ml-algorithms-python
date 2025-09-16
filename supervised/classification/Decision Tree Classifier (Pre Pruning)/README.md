@@ -67,37 +67,13 @@ This helps to prevent **overfitting** and reduce computational cost.
    - Stop splitting if impurity is already below a given threshold.  
 
 ---
-
-## 📈 Visualization and Terminologies
-
-<img src="decision_tree_classifier_image.png" alt="Decision Tree Terminologies" width="500"/>
-
-- **Root Node** – top-most split  
-- **Internal Nodes** – further splits based on conditions  
-- **Leaf Nodes** – final class predictions (majority class)  
-- **Pre-Pruning** – tree growth is restricted during training using constraints  
-
----
-
-## 🌲 Before vs After Pre-Pruning
-
-### 🔹 Full (Unpruned) Decision Tree
-
-- **Train Accuracy:** `1.00`  
-- **Test Accuracy:** `0.85`  
-
-<img src="unpruned_tree.png" alt="Unpruned Decision Tree" width="600"/>
-
-The tree fits the training data perfectly but performs poorly on unseen test data → **overfitting**.
-
----
-
-### 🔹 Pre-Pruned Decision Tree
+  
+## Pre-Pruned Decision Tree
 
 - **Train Accuracy:** `0.94`  
 - **Test Accuracy:** `0.92`  
 
-<img src="prepruned_tree.png" alt="Pre-Pruned Decision Tree" width="600"/>
+<img src="pruned_tree.png" alt="Pre-Pruned Decision Tree" width="600"/>
 
 After applying pre-pruning constraints, the tree is smaller and generalizes better, achieving higher test accuracy.  
 
@@ -111,7 +87,6 @@ After applying pre-pruning constraints, the tree is smaller and generalizes bett
 - **Recall:** `0.92`  
 - **F1 Score:** `0.91`  
 
-<img src="accuracyScore.png" alt="Accuracy" width="500"/>
 
 ---
 
