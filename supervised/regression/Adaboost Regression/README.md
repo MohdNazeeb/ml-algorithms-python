@@ -73,7 +73,7 @@ $$
 
 ## Visualization
 
-<img src="adaboost_diagram.png" alt="Adaboost Visualization" width="500"/>
+<img src="adaboost_diagram.jpeg" alt="Adaboost Visualization" width="500"/>
 
 - Each learner focuses on the **mistakes of its predecessors**.  
 - Final prediction is a **combination** of all learners’ outputs.  
