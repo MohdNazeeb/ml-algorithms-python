@@ -73,7 +73,7 @@ $$
 
 ## Visualization
 
-![AdaBoost Regression](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/AdaBoost2.png/600px-AdaBoost2.png)
+<img src="adaboost_diagram.png" alt="Adaboost Visualization" width="500"/>
 
 - Each learner focuses on the **mistakes of its predecessors**.  
 - Final prediction is a **combination** of all learners’ outputs.  
