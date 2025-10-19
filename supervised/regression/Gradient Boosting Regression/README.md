@@ -88,6 +88,6 @@ $$
 
 The following graph shows the performance of the implemented Gradient Boosting Regression model:
 
-<img src="accuracyGradientBoost.png" alt="Accuracy Graph" width="500"/>
+<img src="gradientAccuracy.png" alt="Accuracy Graph" width="500"/>
 
 </details>
