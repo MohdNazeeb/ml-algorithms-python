@@ -54,25 +54,33 @@ The algorithm minimizes this loss using **gradient descent**, fitting each new l
 At each iteration \( t \):
 
 1. Compute pseudo-residuals:
+2. 
    $$
    r_i^{(t)} = -\frac{\partial L(y_i, F_{t-1}(x_i))}{\partial F_{t-1}(x_i)}
    $$
-2. Fit a weak learner \( h_t(x) \) to the pseudo-residuals \( r_i^{(t)} \).
-3. Compute the optimal step size \( \gamma_t \):
+   
+4. Fit a weak learner  \( h_t(x) \) to the pseudo-residuals \( r_i^{(t)} \).
+5. Compute the optimal step size \( \gamma_t \):
+   
    $$
    \gamma_t = \arg\min_\gamma \sum_{i=1}^{m} L(y_i, F_{t-1}(x_i) + \gamma \cdot h_t(x_i))
    $$
-4. Update the model:
+   
+7. Update the model:
+   
    $$
    F_t(x) = F_{t-1}(x) + \eta \cdot \gamma_t \cdot h_t(x)
    $$
+   
    where \( \eta \) is the **learning rate** controlling the contribution of each tree.
-5. Convert model scores to probabilities using the **sigmoid function**:
+9. Convert model scores to probabilities using the **sigmoid function**:
+
    $$
    P(y=1|x) = \frac{1}{1 + e^{-F_T(x)}}
    $$
 
 The final class prediction is:
+
 $$
 \hat{y} = 
 \begin{cases} 
